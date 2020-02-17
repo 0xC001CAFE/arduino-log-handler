@@ -65,4 +65,6 @@ void LogHandler::log(Level level, const char *messageFormat, ...) const{
 	}
 	
 	va_end(args);
+	
+	logOutput.print("\n");
 }
